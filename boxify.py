@@ -27,7 +27,6 @@ def boxify(astr, border="#", margin=1):
     borderbar = border*borderbar_len
     margin_bar = border + " "*margin + " "*width + " "*margin + border
     top = [borderbar,] + [margin_bar,]*margin
-    print(top)
     bottom = [margin_bar,]*margin + [borderbar,]
     all_together_now = top+lstr_content+bottom
     return "\n".join(all_together_now)
